@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CompostaFácil</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="cabecalho">
+    <div class="icone">🍂</div>
+    <h1>CompostaFácil</h1>
+    <p>Calculadora simples de compostagem para transformar resíduos orgânicos em adubo.</p>
+</header>
+
+<main class="container">
+    <section class="card-principal">
+        <h2>Calculadora de Compostagem</h2>
+        <p class="texto">
+            Informe a quantidade semanal de resíduos orgânicos da propriedade.
+        </p>
+
+        <label for="restos">Restos de alimentos (kg)</label>
+        <input type="number" id="restos" min="0" placeholder="Ex: 8">
+
+        <label for="folhas">Folhas secas e grama (kg)</label>
+        <input type="number" id="folhas" min="0" placeholder="Ex: 5">
+
+        <label for="cascas">Cascas de frutas e verduras (kg)</label>
+        <input type="number" id="cascas" min="0" placeholder="Ex: 4">
+
+        <button id="calcular">Calcular compostagem</button>
+
+        <div id="resultado"></div>
+    </section>
+
+    <section class="informacoes">
+        <div class="info">
+            <h3>🌱 O que pode ir?</h3>
+            <p>Cascas, folhas secas, restos de frutas, verduras, borra de café e grama cortada.</p>
+        </div>
+
+        <div class="info">
+            <h3>🚫 Evite colocar</h3>
+            <p>Óleo, plástico, vidro, metal, carnes, fezes de animais domésticos e produtos químicos.</p>
+        </div>
+
+        <div class="info">
+            <h3>🌾 Onde usar?</h3>
+            <p>O composto pode ser usado em hortas, jardins, pomares e canteiros da propriedade.</p>
+        </div>
+    </section>
+
+    <section class="dica">
+        <h2>Dica sustentável</h2>
+        <p id="dicaTexto">Misture resíduos úmidos com folhas secas para evitar mau cheiro.</p>
+        <button id="trocarDica">Nova dica</button>
+    </section>
+</main>
+
+<footer>
+    <p>CompostaFácil © 2026 | Resíduo orgânico também pode virar vida no solo</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
